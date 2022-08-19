@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  padding: 2rem;
+  /* padding: 2rem; */
   background-color: #d6bdbd;
   /* height: 100%; */
   min-height: 573px;
@@ -10,7 +10,16 @@
 a{
   text-decoration: none;
 }
-
+.css-d3wz3i
+{
+margin: 16px;
+-webkit-box-flex: 1;
+/* -webkit-flex-grow: 1; */
+-ms-flex-positive: 1;
+flex-grow: 1;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;}
 
 nav{
   padding: 4px;

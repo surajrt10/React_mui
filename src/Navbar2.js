@@ -14,7 +14,6 @@ import { Stack } from "@mui/system";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
-import NotificationsIcon from '@mui/icons-material/Notifications';
 export const Navbar2 = () => {
   const [anchor, setanchor] = useState(null);
   const open = Boolean(anchor);
@@ -28,9 +27,9 @@ export const Navbar2 = () => {
   };
 
   return (
-    <Box>
-      <AppBar sx={{ padding: 0, textAlign: "center" }} position="static">
-        <Toolbar>
+    <Box >
+      <AppBar sx={{ padding: 0, textAlign: "center" ,flexWrap:'wrap'}} position="static">
+        <Toolbar sx={{flexWrap:'wrap'}}>
           <IconButton
             size="large"
             edge="start"
@@ -47,7 +46,7 @@ export const Navbar2 = () => {
               </Typography>
             </Box>
           </Drawer>
-          <Stack direction={"row"} m={2} spacing={2} sx={{ flexGrow: 1 }}>
+          <Box sx={{display:'flex',flexWrap:'wrap'}} m={2} spacing={2} sx={{ flexGrow: 1 }}>
             <Link
               style={{ textDecoration: "none" }}
               className="link"
@@ -144,7 +143,7 @@ export const Navbar2 = () => {
                 FETCH API
               </Typography>
             </Link>
-          </Stack>
+          </Box>
           <Box sx={{ flexGrow: 0 }}>
             <Typography
               sx={{
