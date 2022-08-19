@@ -4,22 +4,26 @@
   background-color: #d6bdbd;
   /* height: 100%; */
   min-height: 573px;
+  user-select:none;
 }
 
+a{
+  text-decoration: none;
+}
 
 
 nav{
   padding: 4px;
   background-color:rgb(0, 204, 255) hsl(192, 100%, 50%)
 }
-span{
+.counter{
   display: inline-block;
-  height: 30px;
-  width: 30px;
-  /* outline: 2px solid black; */
+  min-height: 30px;
+  min-width: 30px;
+  outline: 2px solid black;
   margin-top: 2px;
   margin-left: 2px;
-  /* padding-top: 10px; */
+  padding-top: 10px;
   user-select: none;
   font-family:Arial, Helvetica, sans-serif;
   font-size: 25px;
